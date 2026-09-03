@@ -58,6 +58,6 @@ O [SENAI Santa Catarina](https://senai.br) (Unidade Florianópolis) é referênc
 
 ## 👤 Autor
 
-Desenvolvido por **[Seu Nome Completo]** ☕
+Desenvolvido por **[Julio cesar(CJ)]** ☕
 * **LinkedIn:** [Acesse meu perfil](https://linkedin.com)
 * **E-mail:** seu.email@exemplo.com
