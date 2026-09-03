@@ -10,9 +10,9 @@ O repositório funciona como um portfólio de evolução técnica, cobrindo desd
 
 O aprendizado é focado nas principais tecnologias do ecossistema Front-End:
 
-* **HTML5:** Estruturação semântica de páginas web.
-* **CSS3:** Estilização, layouts modernos (Flexbox/Grid), responsividade (Media Queries) e animações.
-* **JavaScript (ES6+):** Manipulação do DOM, consumo de APIs, lógica de programação e interatividade.
+* **HTML:** Estruturação semântica de páginas web.
+* **CSS:** Estilização, layouts modernos (Flexbox/Grid), responsividade (Media Queries) e animações.
+* **JavaScript:**, consumo de APIs, lógica de programação.
 * **Ferramentas de Desenvolvimento:** [Visual Studio Code](https://visualstudio.com), Git e GitHub para controle de versão.
 
 ---
@@ -60,4 +60,4 @@ O [SENAI Santa Catarina](https://senai.br) (Unidade Florianópolis) é referênc
 
 Desenvolvido por **[Julio cesar(CJ)]** ☕
 * **LinkedIn:** [Acesse meu perfil](https://linkedin.com)
-* **E-mail:** seu.email@exemplo.com
+* **E-mail:** JULIOBATISTA120810@GMAIL.COM
