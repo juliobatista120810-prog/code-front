@@ -1,0 +1,7 @@
+button, input, a {
+  margin: 6px;
+  
+}
+body {
+  background: linear-gradient(120deg, #160B35, #302060, #174A78, #0B1D3A);
+}
