@@ -1,8 +1,87 @@
 import './App.css'
 
-//adicionar um botão toda vez que fizer um ex novo.
+//adicionar um botão novo toda vez que fizer um exercicio novo.
 
 function App() {
+
+function romeroBrique(){
+  
+  precoCusto = Number(prompt('Quanto seu romero pagou na obra de arte: '))
+
+  let lucro = precoCusto * 2;
+  let precoVenda = precoCusto + lucro
+
+  alert('Preço de venda recomendado: R$' + precoVenda.toFixed(2));
+}
+
+function manoJuca() {
+  let salario, moradia, agua, luz, internet, gasolina, streamings, telefone, outros
+
+  salario = Number(prompt('Quanto é seu salario: '))
+  moradia = Number(prompt('Quanto é a moradia: '))
+  agua = Number(prompt('Quanto é a agua: '))
+  luz = Number(prompt('Quanto é a luz: '))
+  internet = Number(prompt('Quanto é a internet: '))
+  gasolina = Number(prompt('Quanto é a gasolina: '))
+  streamings = Number(prompt('Quanto é a streamings: '))
+  telefone = Number(prompt('Quanto é a telefone: '))
+  outros = Number(prompt('Quanto é a outros: '))
+
+  let sobra = salario - moradia - agua - luz - internet - gasolina - streamings - telefone - outros
+
+  alert('Sua sobra foi de: R$' + sobra)
+}
+
+  function saruMano(){
+    let showsMarcados, precoBomba, qtdFumaca
+
+    showsMarcados = Number(prompt('QWuantos shows tem marcados: '))
+    precoBomba = Number(prompt('Qual é o preço de uma unidade de bomba: '))
+    qtdFumaca = Number(prompt('Qual é a quantida unitaria da bomba: '))
+    
+    let calculo = qtdFumaca * showsMarcados
+    let desafio = qtdFumaca * precoBomba
+
+    alert('Está é a quantidade de bombas que precisam ser compradas: ' + calculo)
+    alert('Você precisa mobilizar está quantidade de dinheirinho: ' + desafio)
+  }
+
+function capitaoPatolino(){
+  let gastoSuprimento, faturamentoIngressos, faturamentoItens
+
+  gastoSuprimento = Number(prompt('Quanto foi gasto em suprimentos e mercadorias para operar seu navio: '))
+  faturamentoIngressos = Number(prompt('Quanto foi o faturamento em venda de ingressos: '))
+  faturamentoItens = Number(prompt('Quando foi o faturamento em venda de ítens: '))
+
+  let lucroReais = faturamentoIngressos + faturamentoItens - gastoSuprimento 
+
+  alert('Seu lucro tem um total de: ' + lucroReais)
+}
+
+function DonaBetinha() {
+  let BrutalTotal, premiacoes, presentes, comissoes
+
+  BrutalTotal = Number(prompt('Qual é o dinheirinho bruto de hoje: '))
+  premiacoes = Number(prompt('Quanto você pagou as premiações: '))
+  presentes = Number(prompt('Quanto pagou pelos presentes/agrados de hoje: '))
+  comissoes = Number(prompt('Quanto você gastou com comissões para os operadores dos seus jogos: '))
+
+  let lucroBrutal = BrutalTotal - premiacoes - comissoes - presentes
+
+  alert('Este foi o lucro "BRUTAL!" de hoje: ' + lucroBrutal)
+}
+
+  function TellesTransportes2() {
+  let peso, distancia, volume
+
+  peso = (prompt('Qual é o peso: '))
+  distancia = Number(prompt('Qual é a distancia: '))
+  volume = Number(prompt('Qual é o volume: '))
+
+  let frete = 15+(2*peso)+(0.05*distancia)+(10*volume)
+
+  alert('Este é o valor do frete: ' + frete)
+  }
 
 function Mônika() {
   let chance, n
@@ -113,6 +192,12 @@ function calcularPontos() {
     <button onClick={junin}>junin</button>
     <button onClick={tellesTransportes}>tellesTransportes</button>
     <button onClick={Mônika}>Mônika</button>
+    <button onClick={TellesTransportes2}>TellesTransportes2</button>
+    <button onClick={DonaBetinha}>DonaBetinha</button>
+    <button onClick={capitaoPatolino}>capitaoPatolino</button>
+    <button onClick={saruMano}>saruMano</button>
+    <button onClick={manoJuca}>manoJuca</button>
+    <button onClick={romeroBrique}>romeroBrique</button>
 
     <hr />
 
