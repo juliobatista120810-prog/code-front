@@ -4,10 +4,110 @@ import './App.css'
 
 function App() {
 
+  function kowalski(){
+    
+  let relatoriosPF = Number(prompt('Quantos relatórios PF?'));
+let relatoriosPJ = Number(prompt('Quantos relatórios PJ?'));
+
+let tempoPF = Number(prompt('Quantas horas nos relatórios PF?'));
+let tempoPJ = Number(prompt('Quantas horas nos relatórios PJ?'));
+
+let valorPF = Number(prompt('Valor recebido de PF?'));
+let valorPJ = Number(prompt('Valor recebido de PJ?'));
+
+let totalRelatorios = relatoriosPF + relatoriosPJ;
+let tempoTotal = tempoPF + tempoPJ;
+let valorTotal = valorPF + valorPJ;
+
+let mediaValorPF = valorPF / relatoriosPF;
+let mediaValorPJ = valorPJ / relatoriosPJ;
+
+let mediaTempoPF = tempoPF / relatoriosPF;
+let mediaTempoPJ = tempoPJ / relatoriosPJ;
+
+alert(
+    'RELATÓRIO KOWALSKI\n\n' +
+    'Total de relatórios: ' + totalRelatorios + '\n' +
+    'Tempo total: ' + tempoTotal + ' horas\n' +
+    'Valor total: R$' + valorTotal + '\n\n' +
+    'Média valor PF: R$' + mediaValorPF.toFixed(2) + '\n' +
+    'Média valor PJ: R$' + mediaValorPJ.toFixed(2) + '\n' +
+    'Média tempo PF: ' + mediaTempoPF.toFixed(2) + ' horas\n' +
+    'Média tempo PJ: ' + mediaTempoPJ.toFixed(2) + ' horas'
+);
+  }
+
+  function juninFreela(){
+   
+    let qtdhoras = Number(prompt('Quanto é a quantidade de horas estimada: '))
+    let precoConsultor = Number(prompt('Quanto foi pago para o consultor: '))
+
+    let precoCobrado = 500 + (qtdhoras * 350) 
+    let lucroFreela = precoCobrado - precoConsultor
+
+    alert('Este foi o lucro do freela: $' + lucroFreela);
+  }
+
+function InteligenciaArtificial(){
+    let tokensGastos, numeroDeCaracteres, custoDoToken, tokensUsados, custoTotal
+
+    numeroDeCaracteres = Number(prompt('Quantidade de caracteres: '))
+    custoDoToken = Number(prompt('Qual foi o custo dos tokens: '))
+    tokensUsados = Number(prompt('Quantos tokens foram usados: '))
+    
+    tokensGastos = 5 + numeroDeCaracteres
+    custoTotal = tokensGastos * custoDoToken
+    
+    alert('Esse foi gasto dos tokens: $' + custoTotal)
+  }
+
+function gaeleSeusJacares(){
+
+  let caminhoes = Number(prompt('Quantos caminhões foram vendidos?'));
+
+  let jacares = caminhoes * 50;
+  let custo = caminhoes * 450;
+  let venda = jacares * 90;
+
+  jacares = Number(prompt('Quantos jacares foram vendidos: '))
+  custo = Number(prompt('Quanto foi o custo: '))
+  venda = Number(prompt('Quanto foi o valor da venda: '))
+  
+  let lucro = venda - custo;
+
+  alert('Lucro da temporada: R$' + lucro);
+
+}
+
+function seuGildao(){
+    let pessoas = Number(prompt('Quantas pessoas vão participar do churrasco?'));
+
+  let carne = pessoas * 0.5;
+  let cerveja = pessoas * 1;
+  let agua = pessoas * 0.5;
+  let refri = pessoas * 0.2;
+
+alert('Quantidade de carne: ' + carne + ' kg');
+alert('Quantidade de cerveja: ' + cerveja + ' L');
+alert('Quantidade de água: ' + agua + ' L');
+alert('Quantidade de refrigerante: ' + refri + ' L');
+}
+
+function PetShopRonBernardo(){
+  
+  let pesoGramas = Number(prompt('Digite o peso da ração em gramas: '))
+
+    let pesoKg = pesoGramas / 1000
+
+    let preco = pesoKg * 10
+
+    alert('O preço da ração é R$' + preco.toFixed(2))
+
+}
+
 function romeroBrique(){
   
-  precoCusto = Number(prompt('Quanto seu romero pagou na obra de arte: '))
-
+  let precoCusto = Number(prompt('Quanto seu romero pagou na obra de arte: '))
   let lucro = precoCusto * 2;
   let precoVenda = precoCusto + lucro
 
@@ -198,6 +298,11 @@ function calcularPontos() {
     <button onClick={saruMano}>saruMano</button>
     <button onClick={manoJuca}>manoJuca</button>
     <button onClick={romeroBrique}>romeroBrique</button>
+    <button onClick={PetShopRonBernardo}>PetShopRonBernardo</button>
+    <button onClick={seuGildao}>seuGildao</button>
+    <button onClick={InteligenciaArtificial}>InteligenciaArtificial</button>
+    <button onClick={juninFreela}>juninFreela</button>
+    <button onClick={kowalski}>kowalski</button>
 
     <hr />
 

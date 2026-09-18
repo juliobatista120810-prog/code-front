@@ -5,3 +5,217 @@ button, input, a {
 body {
   background: linear-gradient(120deg, #160B35, #302060, #174A78, #0B1D3A);
 }
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(circle at 20% 20%, #4c1d95 0%, transparent 30%),
+    radial-gradient(circle at 80% 30%, #075985 0%, transparent 30%),
+    radial-gradient(circle at 50% 90%, #312e81 0%, transparent 35%),
+    #080b20;
+  color: white;
+}
+
+.cont-app {
+  min-height: 100vh;
+  padding: 45px 30px;
+  text-align: center;
+}
+
+/* TÍTULOS */
+
+h1 {
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+
+  background: linear-gradient(90deg, #ffffff, #b9c9ff, #d8b4fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 0 0 25px rgba(120, 100, 255, 0.4);
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #b9c2e8;
+  margin-bottom: 35px;
+}
+
+/* ÁREA DOS BOTÕES */
+
+.cont-app {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* BOTÕES */
+
+.cont-app button {
+  position: relative;
+
+  background: rgba(40, 35, 90, 0.75);
+  color: #ffffff;
+
+  border: 1px solid rgba(150, 140, 255, 0.35);
+  border-radius: 12px;
+
+  padding: 13px 20px;
+  margin: 7px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  backdrop-filter: blur(8px);
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.3),
+    inset 0 0 10px rgba(120, 100, 255, 0.05);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+/* BRILHO ATRÁS DO BOTÃO */
+
+.cont-app button::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 13px;
+
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #2563eb,
+    #06b6d4
+  );
+
+  opacity: 0;
+  z-index: -1;
+
+  transition: opacity 0.25s ease;
+}
+
+/* MOUSE EM CIMA */
+
+.cont-app button:hover {
+  transform: translateY(-4px) scale(1.03);
+
+  background: linear-gradient(
+    135deg,
+    rgba(91, 55, 180, 0.9),
+    rgba(29, 78, 150, 0.9)
+  );
+
+  border-color: rgba(160, 150, 255, 0.8);
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(90, 100, 255, 0.25);
+}
+
+.cont-app button:hover::before {
+  opacity: 0.35;
+}
+
+/* QUANDO CLICAR */
+
+.cont-app button:active {
+  transform: translateY(-1px) scale(0.97);
+}
+
+/* LINHA */
+
+hr {
+  border: none;
+  height: 1px;
+
+  margin: 35px auto;
+
+  max-width: 900px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #6d5dfc,
+    #38bdf8,
+    #6d5dfc,
+    transparent
+  );
+
+  box-shadow: 0 0 12px rgba(100, 100, 255, 0.5);
+}
+
+/* TESTAR E MÉDIA */
+
+.cont-app button:nth-last-child(2),
+.cont-app button:last-child {
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #2563eb
+  );
+
+  border-color: rgba(180, 170, 255, 0.7);
+
+  padding: 14px 28px;
+
+  box-shadow:
+    0 5px 20px rgba(70, 50, 200, 0.4);
+}
+
+.cont-app button:nth-last-child(2):hover,
+.cont-app button:last-child:hover {
+  background: linear-gradient(
+    135deg,
+    #9333ea,
+    #0284c7
+  );
+
+  box-shadow:
+    0 0 25px rgba(90, 120, 255, 0.5);
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 700px) {
+  .cont-app {
+    padding: 30px 15px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
+
+  .cont-app button {
+    font-size: 14px;
+    padding: 11px 15px;
+  }
+}
